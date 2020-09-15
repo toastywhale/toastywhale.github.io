@@ -3,62 +3,114 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Le Fishe</title>
+<title>CSS Web Page</title>
 
 <style>
 
-        #bg {
+html { 
+  background: url(toastywhale.github.io/Images/Le Fishe.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
-        background:url(Le Fishe.jpg) no-repeat center center fixed;
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        margin: 0;
-        padding: 0;
-		
+
+	body {
+		margin:0;
+		padding:0;
+		line-height: 1.5em;
 	}
+	
 	
 	#header {
 		background: black;
 		font-family: Arial;
 		height: 100px;
+	}
 		
+	
+	.inntertext {
+	
+		text-align: center;
+		vertical-align: middle;
+		font-family: Arial;
+		color: #7e431a;
+		
+	}
+		
+
+		
+	/* ##### Navigation Bar #### */
+	
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		background-color: #000;	
 		}
+	
+	li {
+		float: left;
+		border-right:1px solid #bbb;
+	}
+	
+	li:last-child {
+		border-right: none;
+	}
 		
-		
-</style>	
-			
+	li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		}
+	
+	li a:hover:not(.active) {
+		background-color: #808080;
+		}
+	
+	.active {
+		background-color: #0099ff;
+		}
+	
+</style>
+
+<link rel="shortcut icon" type="image/jpg" href="/favicon.jpg"/>
+
 </head>
+
 <body>
 
-
-<div id="bg">
-	
-	</div>
-
- <div id="containter">
-	 
-	</div>
-
-	   <div id="header">
-		   
-	</div>
+	<div id="header">
 			
 		<ul style="display: inline;">
 			<li><a class="active" href="#home">Home</a></li>
-			<li><a href="#about">About</a></li>
 			<li><a href="#news">News</a></li>
 			<li><a href="#contact">Contact</a></li>
+			<li><a href="#about">About</a></li>
 		</ul>
 
-<b>Welcome!</b> <br /> <B> LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE<B>
-				
-<audio controls autoPlay Loop>
-<source src="toastywhale.github.io/Audio/Le Fishe - HD Remaster.mp3" type="audio/mpeg">	
+	</div>
+
+	<div id="contentwrapper">
+	
+		<div id="contentcolumn">
 		
+		<div class="inntertext">
+		
+			<b>Welcome!</b> <br /> <b> LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE LE FISHE</b>
+
+		</div>
+	</div>
+</div>
+
+<audio controls autoPlay>
+
+	<source src="toastywhale.github.io/Audio/Le Fishe - HD Remaster.mp3" type="audio/mpeg">
+	
 </audio>
-		
+	
 </body>
-	 
 </html>
